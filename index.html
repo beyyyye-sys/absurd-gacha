@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101213">
+  <meta name="description" content="欢迎来到离谱制造局。72件原创怪东西，拉下拉杆，领取你的精神补给。免费、离线、没有氪金。">
+  <title>离谱制造局 · 荒诞扭蛋实验室</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="top-strip"><span><i></i> ALL SYSTEMS WEIRD</span><span>100% 离谱 · 0% 人生建议</span><span>EST. 2077 <b>↗</b></span></div>
+  <header class="site-header shell">
+    <a class="brand" href="#" aria-label="离谱制造局首页"><span class="brand-symbol">怪<span>✦</span></span><span>离谱制造局<small>ABSURD OBJECTS DEPT.</small></span></a>
+    <nav class="main-nav" aria-label="主导航"><button class="nav-link active" data-view="arcade">扭蛋实验室 <span>01</span></button><button class="nav-link" data-view="collection">收藏图鉴 <span>02</span></button><button class="nav-link" data-view="achievements">成就档案 <span>03</span></button></nav>
+    <div class="header-actions"><span class="free-credit"><span>✳</span> 快乐不限量</span><button class="icon-button sound-button" id="sound-toggle" aria-label="开启音效" aria-pressed="false" title="开启音效">♪<span class="sound-off">/</span></button><button class="icon-button" id="settings-toggle" aria-label="存档与设置" title="存档与设置">⚙</button></div>
+  </header>
+  <main class="shell">
+    <section id="view-arcade" class="view active" aria-label="扭蛋实验室">
+      <div class="page-heading"><div><span class="eyebrow"><span class="tiny-cross">✳</span> YOUR DAILY DOSE OF NONSENSE</span><h1>生活够离谱了，<br>再<span class="accent-text">扭</span>一点。<span class="heading-star">✳</span></h1><p>欢迎光临。这里不生产快乐，只生产快乐的可疑替代品。</p></div><div class="edition-label">VOL. 001<br><span>荒诞日常系列</span><small>72 OBJECTS / INFINITE NONSENSE</small></div></div>
+      <div class="arcade-layout">
+        <aside class="lab-sidebar">
+          <div class="section-label"><span class="live-dot"></span> 实验进行中 <span class="mono">LIVE</span></div>
+          <div class="intro-card"><span class="small-tag">本期实验主题</span><h2>一些没用的东西，<br>有一些用的快乐。</h2><p>把成年人的精神状态<br>装进一颗小小的扭蛋里。</p><div class="intro-doodle" aria-hidden="true"><span class="doodle-orbit"></span><span class="doodle-face">✳</span><span class="doodle-label">CERTIFIED<br>USELESS ✓</span></div></div>
+          <div class="stats-row"><div><b id="total-draws">000</b><span>累计扭蛋</span></div><div><b><span id="unique-count">00</span><small>/72</small></b><span>怪东西入库</span></div></div>
+          <div class="mission"><div class="mission-title"><span>今日小目标</span><span id="mission-count">0/5</span></div><p id="mission-copy">扭 5 次，给无聊放个假。</p><div class="progress-track"><span id="mission-progress"></span></div></div>
+          <button class="text-link" id="open-guide">操作指南 <span>↗</span></button>
+        </aside>
+        <section class="machine-stage" aria-label="赛博扭蛋机">
+          <div class="stage-coordinate top-left">A.O.D.<br>EXPERIMENT / 001</div><div class="stage-coordinate top-right">非理性设备<br>请放心上头 ↙</div>
+          <div class="stage-orbit" aria-hidden="true"></div><div class="stage-orbit orbit-two" aria-hidden="true"></div>
+          <div class="machine" id="machine">
+            <div class="antenna"><span></span></div>
+            <div class="machine-sign"><span class="sign-bolt">ϟ</span><span>离 谱 发 生 器<small>THE NONSENSE GENERATOR</small></span><span class="sign-bolt">ϟ</span></div>
+            <div class="machine-neck"></div>
+            <div class="globe"><div class="glass-grid"></div><div class="glass-shine"></div><div class="glass-shine small-shine"></div><div class="globe-stars">✧ <span>+</span> ✦</div>
+              <div class="capsule c1"><span>✿</span></div><div class="capsule c2"><span>☻</span></div><div class="capsule c3"><span>✦</span></div><div class="capsule c4"><span>?</span></div><div class="capsule c5"><span>♡</span></div><div class="capsule c6"><span>☁</span></div><div class="capsule c7"><span>★</span></div><div class="capsule c8"><span>◎</span></div><div class="capsule c9"><span>!</span></div><div class="capsule c10"><span>☺</span></div><div class="capsule c11"><span>✳</span></div>
+              <div class="globe-sticker">经检测<br><b>毫无用处</b><small>100% APPROVED</small></div>
+            </div>
+            <div class="machine-body"><div class="body-screw screw-left"></div><div class="body-screw screw-right"></div><div class="machine-display"><span class="display-dot"></span><span id="machine-message">准备好接收离谱了吗？</span></div><div class="body-middle"><div class="machine-number">01<span>INSERT NOTHING<br>EXPECT ANYTHING</span></div><div class="coin-slot"><span></span><small>¥ 0</small></div></div><div class="dispenser"><div class="dispenser-depth"></div><div class="drop-capsule" id="drop-capsule"></div><span>PUSH YOUR LUCK</span></div><span class="body-brand">A.O.D.®</span><span class="machine-grille">▥▥▥</span></div>
+            <button class="lever" id="lever" aria-label="拉下拉杆，抽一个扭蛋"><span class="lever-base"></span><span class="lever-arm"></span><span class="lever-ball"></span><span class="lever-hint">拉我<br>↓</span></button>
+            <div class="machine-foot foot-left"></div><div class="machine-foot foot-right"></div>
+          </div>
+          <div class="machine-shadow"></div><div class="stage-floor"></div><div class="stage-caption"><span>↑</span> 拉下拉杆 · 命运负责发疯</div><span class="stage-coordinate bottom-left">CAUTION: MAY CONTAIN JOY.</span><span class="stage-coordinate bottom-right">✳</span>
+        </section>
+        <aside class="draw-sidebar">
+          <div class="draw-panel"><span class="small-tag lime-tag">精神补给 · 免费供应</span><h2>你永远不知道<br>下一颗有多离谱。</h2><p>没有充值入口，只有情绪出口。</p><button class="draw-button" id="draw-one"><span>扭一个试试</span><b>↗</b></button><button class="batch-button" id="draw-ten">一口气扭十个 <span>×10</span></button><div class="keyboard-tip"><kbd>SPACE</kbd> 也能扭一下</div></div>
+          <div class="odds-panel"><div class="panel-heading">离谱概率公示 <span>i</span></div><div class="odds-bar"><span></span><span></span><span></span><span></span><span></span></div><div class="odds-list"><span><i class="rarity-dot common"></i>普通 <b>50%</b></span><span><i class="rarity-dot uncommon"></i>不凡 <b>28%</b></span><span><i class="rarity-dot rare"></i>稀有 <b>15%</b></span><span><i class="rarity-dot epic"></i>史诗 <b>6%</b></span><span><i class="rarity-dot legendary"></i>传说 <b>1%</b></span></div><p id="pity-text">传说保底：0 / 60 次</p></div>
+          <button class="history-link" id="open-history"><span>↺</span> 查看抽奖记录 <b>↗</b></button>
+        </aside>
+      </div>
+      <div class="ticker" aria-hidden="true"><div>理智已下线 <span>✳</span> 离谱正在加载 <span>✳</span> 无用之物也是宝物 <span>✳</span> 今日宜：瞎开心 <span>✳</span> 理智已下线 <span>✳</span> 离谱正在加载 <span>✳</span> 无用之物也是宝物 <span>✳</span> 今日宜：瞎开心 <span>✳</span></div></div>
+      <section class="recent-section"><div class="section-heading"><div><span class="eyebrow">FRESH OUT OF THE MACHINE</span><h2>刚捞出来的怪东西 <span id="recent-label">等待投喂好运</span></h2></div><button class="text-link" data-view="collection">打开全部图鉴 <span>↗</span></button></div><div class="recent-grid" id="recent-grid"></div></section>
+    </section>
+    <section id="view-collection" class="view" aria-label="收藏图鉴"><div class="subpage-heading"><span class="eyebrow">THE CABINET OF CURIOSITIES</span><h1>无用之物，<span>有趣至上。</span></h1><p>每一件怪东西，都值得一个专属的角落。<b id="collection-summary"></b></p></div><div class="collection-controls"><div class="filter-tabs" id="rarity-filters"><button class="active" data-rarity="all">全部</button><button data-rarity="common">普通</button><button data-rarity="uncommon">不凡</button><button data-rarity="rare">稀有</button><button data-rarity="epic">史诗</button><button data-rarity="legendary">传说</button><button data-rarity="secret">彩蛋</button></div><label class="search-box"><span>⌕</span><input id="collection-search" placeholder="搜索已发现的怪东西…" aria-label="搜索收藏品"></label><label class="owned-filter"><input type="checkbox" id="owned-only"> 只看已收集</label></div><div class="collection-progress"><span id="collection-progress-bar"></span></div><div id="collection-grid" class="collection-grid"></div><p class="empty-state" id="collection-empty" hidden>没找到。可能它正在另一个宇宙摸鱼。</p></section>
+    <section id="view-achievements" class="view" aria-label="成就档案"><div class="subpage-heading"><span class="eyebrow">QUESTIONABLE LIFE ACHIEVEMENTS</span><h1>不务正业，<span>也能有成就。</span></h1><p>颁给每一位认真胡闹的成年人。<b id="achievement-summary"></b></p></div><div class="achievement-grid" id="achievement-grid"></div><div class="easter-hint"><span>⌘</span><div><b>有人说，这台机器有自己的小秘密。</b><p>试着向它致敬、拨打老玩家的暗号，或者连续戳一戳那个「怪」字。</p></div><span>?</span></div></section>
+  </main>
+  <footer class="site-footer shell"><span>离谱制造局 <b>© 2077</b></span><span>没有实际用途。但愿你玩得开心。</span><button id="footer-secret" aria-label="宇宙的终极答案">DON'T PANIC. <span>✳</span></button></footer>
+  <dialog id="result-dialog" class="result-dialog" aria-label="扭蛋结果与收藏品详情"><button class="dialog-close" data-close aria-label="关闭抽奖结果">×</button><div id="result-content"></div></dialog>
+  <dialog id="history-dialog" class="wide-dialog" aria-label="离谱发生记录"><div class="dialog-heading"><div><span class="eyebrow">EVIDENCE OF YOUR NONSENSE</span><h2>离谱发生记录</h2></div><button class="dialog-close" data-close aria-label="关闭抽奖记录">×</button></div><p class="dialog-description">每一次瞎开心，都有迹可循。保留最近 200 条记录。</p><div class="history-list" id="history-list"></div></dialog>
+  <dialog id="settings-dialog" aria-label="存档与设置"><div class="dialog-heading"><div><span class="eyebrow">LOCAL HUMAN SETTINGS</span><h2>存档与设置</h2></div><button class="dialog-close" data-close aria-label="关闭设置">×</button></div><div class="save-status" id="save-status"></div><p class="dialog-description">收藏、成就与记录自动保存在当前浏览器。换设备前，记得把离谱打包带走。</p><div class="settings-actions"><button id="export-save" class="secondary-button">↓ 导出存档</button><button class="secondary-button" id="import-trigger">↑ 导入存档</button><input type="file" id="import-save" accept="application/json,.json" hidden></div><p class="import-note">导入会替换当前进度。换档前，建议先导出备份。</p><button id="settings-guide" class="text-link">胡闹使用说明 / 概率与保底 <span>↗</span></button><label class="setting-line"><span>减少动画<small>跳过扭蛋等待，保留抽奖结果</small></span><input type="checkbox" id="reduce-motion"></label><div class="danger-zone"><span>想重新做人？<small>清空收藏、记录和成就，无法撤销。</small></span><button id="reset-save">重置存档</button></div><div id="reset-confirm" class="reset-confirm" hidden><p>确定把所有怪东西送回宇宙？请先导出存档。</p><button id="cancel-reset" class="secondary-button">我再想想</button><button id="confirm-reset" class="danger-button">确定清空</button></div></dialog>
+  <dialog id="guide-dialog" aria-label="胡闹使用说明"><div class="dialog-heading"><div><span class="eyebrow">HOW TO EMBRACE THE ABSURD</span><h2>胡闹使用说明</h2></div><button class="dialog-close" data-close aria-label="关闭操作指南">×</button></div><ol class="guide-list"><li><b>拉一下，好运随缘。</b><p>点击拉杆、主按钮，或按空格，抽取一件怪东西。十连保证至少一件稀有或更高稀有度物品。</p></li><li><b>重复不是白给。</b><p>重复收藏会记入拥有数量。普通池共 72 件，另有 4 件隐藏彩蛋。</p></li><li><b>宇宙也有良心。</b><p>基础概率：普通 50%、不凡 28%、稀有 15%、史诗 6%、传说 1%。连续 59 次未出传说，第 60 次必出。十连保底与传说保底都可能提升实际概率。</p></li><li><b>进度自动装兜。</b><p>使用浏览器本地存档，不联网、不氪金。点击右上角齿轮可导出、导入存档。隐私模式或清理浏览器数据可能使存档消失。</p></li></ol><p class="guide-footer">友情提示：本机不能解决人生问题，但能暂时让你忘了问题。</p></dialog>
+  <div class="toast-stack" id="toast-stack" aria-live="polite"></div><div id="live-status" class="sr-only" aria-live="polite" role="status"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
