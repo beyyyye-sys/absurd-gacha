@@ -146,3 +146,4 @@ TEST_REPORT.md          本次实际验证记录
 ```
 
 增加藏品时优先编辑 `catalog.js`，保留已有 ID 以兼容旧存档；概率与保底以 `engine.js` 为准。修改总数后，也要同步页面和文案中的 `72 / 4` 等展示数字，并重新运行测试。
+在线体验：https://beyyyye-sys.github.io/absurd-gacha/
